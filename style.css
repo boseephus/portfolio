@@ -1,0 +1,49 @@
+.quote {
+  font-size: 40px;
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  color: lightgray;
+}
+
+.animated-text {
+  animation: textFade 6s ease-in-out infinite alternate;
+}
+body {
+  animation: background-change 6s ease-in-out infinite alternate;
+
+  margin: 0; /* Remove default body margin */
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+@keyframes background-change {
+  0% {
+    background-color: red;
+    color: black;
+  }
+  40% {
+    background-color: pink;
+  }
+  55% {
+    background-color: white;
+  }
+  65% {
+    background-color: lightblue;
+  }
+  85% {
+    background-color: royalblue;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+@keyframes textFade {
+  0% {
+    color: white;
+  }
+  55% {
+    color: gray;
+  }
+  100% {
+    color: white;
+  }
+}
